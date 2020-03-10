@@ -1,0 +1,141 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">名字待定</string>
+    <string name="title_home">首页</string>
+    <string name="title_examination">考试</string>
+    <string name="title_training">培训</string>
+    <string name="title_mine">我的</string>
+    <string name="login_Tips">点击头像登录</string>
+    <string name="login_topTitle">登录</string>
+    <string name="rememberMe">记住我</string>
+    <string name="register_topTitle">注册账号</string>
+    <string name="textView_userName">账号：</string>
+    <string name="textView_userPassword">密码</string>
+    <string name="button_register">注册</string>
+    <string name="my_Commonly_Used_Text">我的常用</string>
+    <string name="my_concern_text">我的关注</string>
+    <string name="my_message_text">我的消息</string>
+    <string name="my_collection_text">我的收藏</string>
+    <string name="my_history_text">我的历史</string>
+    <string name="user_name_text">用户名</string>
+    <string name="user_name_input_tips">请输入用户名</string>
+    <string name="user_password_text">密码</string>
+    <string name="user_password_input_tips">请输入密码</string>
+    <string name="login_button_text">登录</string>
+    <string name="register_button_text">新用户注册</string>
+    <string name="forget_password_text">忘记密码？</string>
+    <string name="retrieve_password_title">密码找回</string>
+    <string name="confirm_password_again">确认密码</string>
+    <string name="register_inputPassword_again_text">请再次输入密码</string>
+    <string name="input_userName_page">填写账号</string>
+    <string name="input_securityQuestion_page">验证密保</string>
+    <string name="input_changePassword_page">修改密码</string>
+    <string name="next_step_text">下一步</string>
+    <string name="safe_question1_label">安全问题1</string>
+    <string name="safe_question2_label">安全问题2</string>
+    <string name="safe_question3_label">安全问题3</string>
+    <string name="please_input_answer_tips">请输入答案</string>
+    <string name="set_new_password_label1">新密码</string>
+    <string name="set_new_password_label2">确认密码</string>
+    <string name="set_new_password_tips1">请输入新密码</string>
+    <string name="set_new_password_tips2">请再次输入密码</string>
+    <string name="submit_button">提交</string>
+    <string name="question_input_tips">请输入答案</string>
+    <string name="personal_information_title">个人中心</string>
+    <string-array name="question1_list">
+        <item>请选择问题</item>
+        <item>我所在的部门是什么？</item>
+        <item>我工作所在的城市是什么？</item>
+        <item>我大学所在的城市是什么？</item>
+        <item>我的生日是哪一天？</item>
+        <item>我家所在的街道是什么？</item>
+        <item>我所毕业的大学是什么名字？</item>
+    </string-array>
+    <string name="nick_name">我的昵称</string>
+    <string name="edit_information">编辑资料</string>
+    <string name="personal_introduction">简介：此人比较懒，还未添加个人简介</string>
+    <string name="detail_information_label">详细信息</string>
+    <string name="explain_label">(个人、管理员可见)</string>
+    <string name="true_name_label">姓名</string>
+    <string name="true_name">待解决</string>
+    <string name="birthday_label">出生年月</string>
+    <string name="birthday">待解决</string>
+    <string name="company_label">所属公司</string>
+    <string name="company">待解决</string>
+    <string name="job_place_label">工作地点</string>
+    <string name="job_place">待解决</string>
+    <string name="department_label">所属部门</string>
+    <string name="department">待解决</string>
+    <string name="position_label">职位</string>
+    <string name="position">待解决</string>
+    <string name="Telephone_label">电话</string>
+    <string name="Telephone">待解决</string>
+    <string name="Email_label">邮箱</string>
+    <string name="Email">待解决</string>
+    <string name="login_out">注销登录</string>
+    <string name="edit_information_title">编辑资料</string>
+    <string name="edit_photo">修改头像</string>
+    <string name="edit_submit_button">保存</string>
+    <string name="nickname_label">昵称</string>
+    <string name="sex_label">性别</string>
+    <string-array name="sex_list">
+        <item>保密</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string name="introduction_label">个人简介</string>
+    <string name="save_text">保存</string>
+    <string name="user_icon">头像</string>
+    <string name="search">搜索</string>
+    <string name="follow">+关注</string>
+    <string name="choose_by_phone">手机相册</string>
+    <string name="choose_take_photo">拍照</string>
+    <string name="left_parenthesis">(</string>
+    <string name="right_parenthesis">)</string>
+    <string name="my_fans_title">我的粉丝</string>
+    <string name="empty_item">暂未开发，需等到新闻模块开发</string>
+    <string name="send_msg">发送私信</string>
+    <string name="unfollow">取消关注</string>
+    <string name="add_remark">添加备注</string>
+    <string name="back">返回</string>
+    <string name="tab_text_1">用户</string>
+    <string name="tab_text_2">组织</string>
+    <string name="button_refinement_text">精细化管理</string>
+    <string name="button_safety_engineer_text">安全工程师</string>
+    <string name="button_first_constructor_text">一级建造师</string>
+    <string name="true_question_text">全真模拟</string>
+    <string name="my_ranking_text">我的排名</string>
+    <string name="waiting_design_text">功能待定</string>
+    <string name="random_test_text">随机练习</string>
+    <string name="special_test_text">专项练习</string>
+    <string name="my_wrong_text">我的错题</string>
+    <string name="textview13">一建</string>
+    <string name="textview12">安全</string>
+    <string name="mock_exam_text">模拟考试</string>
+    <string name="sequential_practice_text">顺序练习</string>
+    <string name="question_code">预留给题号</string>
+    <string name="input_answer_text">我的答案:</string>
+    <string name="input_answer_tips">建议在此默写一遍再看答案哟</string>
+    <string name="answer_fill">答题处</string>
+    <string name="progress">1/73</string>
+    <string name="hand_in">交卷</string>
+    <string name="right_answer">正确答案</string>
+    <string name="title_mock_exam">精细化模拟考试</string>
+    <string name="exam_intro">题型分为20个填空题、30个选择题、20个判断题和3个简答题。其中填空、选择、判断每题1分，简答每题10分。考试时间为120分钟。 \n在本次模拟考试中，简答题只提供答题处，简答题不参与计分。 </string>
+    <string name="start_exam">开始考试</string>
+    <string name="timer">120：00</string>
+    <string name="question_menu" />
+    <string name="your_answer" />
+    <string name="actionbar_tab1">推荐</string>
+    <string name="actionbar_tab2">关注</string>
+    <string name="score_result">得分：</string>
+    <string name="training_title">周培训标题</string>
+    <string name="training_image">培训图</string>
+    <string name="publish_time">发布时间</string>
+    <string name="click_num">点击量</string>
+    <string name="training_detail">周培训详情</string>
+    <string name="accessory"><u>点击下载并查看附件</u></string>
+    <string name="select_branch">分公司</string>
+    <string name="select_project">项目部</string>
+    <string name="play_and_pause" />
+    <string name="swich_orien" />
+</resources>

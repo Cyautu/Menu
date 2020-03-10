@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <!--答案+解析-->
+    <LinearLayout
+        android:id="@+id/question_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/question_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+        <!--题目内容区域-->
+        <EditText
+            android:id="@+id/answer_fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/answer_fill"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:id="@+id/choose_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+            <!--选项A-->
+            <LinearLayout
+                android:id="@+id/item_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="30dp"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/exam_select_button_A"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonchangea"
+                    android:button="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <TextView
+                    android:id="@+id/text_answerA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <!--选项B-->
+            <LinearLayout
+                android:id="@+id/item_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/exam_select_button_B"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonchangeb"
+                    android:button="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <TextView
+                    android:id="@+id/text_answerB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <!--选项C-->
+            <LinearLayout
+                android:id="@+id/item_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/exam_select_button_C"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonchangec"
+                    android:button="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <TextView
+                    android:id="@+id/text_answerC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <!--选项d-->
+            <LinearLayout
+                android:id="@+id/item_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/exam_select_button_D"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonchanged"
+                    android:button="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <TextView
+                    android:id="@+id/text_answerD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+            <!--选项e-->
+            <LinearLayout
+                android:id="@+id/item_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/exam_select_button_E"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonchangee"
+                    android:button="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <TextView
+                    android:id="@+id/text_answerE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <!--选项f-->
+            <LinearLayout
+                android:id="@+id/item_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/exam_select_button_F"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonchangef"
+                    android:button="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <TextView
+                    android:id="@+id/text_answerF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+        <!--答案-->
+        <TextView
+            android:id="@+id/question_right_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/right_answer" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_answer" />
+
+        <TextView
+            android:id="@+id/question_analyze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

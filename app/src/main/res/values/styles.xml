@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/fzxbsjt</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/fzxbsjt</item>
+    </style>
+
+    <style name="Toolbar.MyStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/fzxbsjt</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="LoadProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
+        <!--Dialog图标着色-->
+        <!--<item name="colorAccent">#ffffff</item>-->
+    </style>
+    <style name="AppTheme.skip" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/fzxbsjt</item>
+    </style>
+    <style name="AppTheme.training" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/fzxbsjt</item>
+    </style>
+</resources>

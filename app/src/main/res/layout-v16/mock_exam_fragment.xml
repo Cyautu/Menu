@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mockexam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_step_later"
+    tools:context=".ui.mainHome.examination.exam.MockExamActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timer"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/question_window"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <com.example.menu.ui.mainHome.examination.exam.ui.mockexam.ViewPagerForScrollView
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.example.menu.ui.mainHome.examination.exam.ui.mockexam.BottomDrawerLayout
+        android:id="@+id/bottom_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/layout_detail"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/colorWhite"
+            android:fillViewport="true">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:columnCount="4" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hand_in"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_circle"
+                android:text="@string/hand_in"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/score_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/score_result"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/question_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="200dp"
+                android:contentDescription="@string/question_menu"
+                android:src="@drawable/question_bar" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/progress" />
+        </LinearLayout>
+
+    </com.example.menu.ui.mainHome.examination.exam.ui.mockexam.BottomDrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

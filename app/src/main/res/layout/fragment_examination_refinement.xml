@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--功能区-->
+    <LinearLayout
+        android:id="@+id/upper_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="3"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <!--左侧功能区-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+            <!--我的排名-->
+            <LinearLayout
+                android:id="@+id/function_my_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_my_ranking"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/my_ranking_text"
+                    android:textColor="@color/colorFontBlack" />
+            </LinearLayout>
+            <!--专项练习-->
+            <LinearLayout
+                android:id="@+id/function_special_test"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_special_test"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/special_test_text"
+                    android:textColor="@color/colorFontBlack" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--布局空白view-->
+        <View
+            android:id="@+id/view_space"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <!--模拟考试-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <!--模拟考试-->
+            <FrameLayout
+                android:id="@+id/function_mock_exam"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/button_true_question_test"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mock_exam_text"
+                    android:textColor="@color/colorFontWhite"
+                    android:textSize="20sp" />
+            </FrameLayout>
+            <!--顺序联系-->
+            <FrameLayout
+                android:id="@+id/function_sequential_practice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/button_random_test"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sequential_practice_text"
+                    android:textColor="@color/colorFontWhite"
+                    android:textSize="20sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!--布局空白view-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </View>
+        <!--右侧功能区-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+            <!--功能待定-->
+            <LinearLayout
+                android:id="@+id/function_waiting_design"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_waiting_design"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/waiting_design_text"
+                    android:textColor="@color/colorFontBlack" />
+            </LinearLayout>
+            <!--我的错题-->
+            <LinearLayout
+                android:id="@+id/function_my_wrong"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_my_wrong"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/my_wrong_text"
+                    android:textColor="@color/colorFontBlack" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--底部布局空白区-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </View>
+</LinearLayout>

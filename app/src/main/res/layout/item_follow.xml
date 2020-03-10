@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp">
+
+    <com.example.menu.ui.setCircleImage.CircleImageView
+        android:id="@+id/user_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/user_icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/nickname_label"
+            android:textColor="@color/colorFontBlack"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/personal_introduction"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

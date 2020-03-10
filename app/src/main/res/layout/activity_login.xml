@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRegisterBackground">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorRegisterBackground">
+
+    <LinearLayout
+        android:id="@+id/userHeadImgView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/userHeadImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_default_head_img" />
+    </LinearLayout>
+    <!--登录输入区域-->
+    <LinearLayout
+        android:id="@+id/inputView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" ><!--focusable不允许自动打开输入法-->
+        <!--输入用户名-->
+        <LinearLayout
+            android:id="@+id/inputUserName"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name_text"
+                android:textColor="@color/colorFontBlack"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/userNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"
+                android:textSize="18sp"
+                android:hint="@string/user_name_input_tips"/>
+        </LinearLayout>
+        <!--输入密码-->
+        <LinearLayout
+            android:id="@+id/inputUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userPasswordLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_password_text"
+                android:textSize="16sp"
+                android:textColor="@color/colorFontBlack"/>
+
+            <EditText
+                android:id="@+id/userPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"
+                android:textSize="18sp"
+                android:hint="@string/user_password_input_tips"/>
+        </LinearLayout>
+        <!--&lt;!&ndash;记住我复选按钮&ndash;&gt;
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rememberMe" />-->
+        <!--登录按钮-->
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/login_button_text"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <!--注册通道按钮-->
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/register_button_shape"
+            android:text="@string/register_button_text"
+            android:textColor="#4B60FF"
+            android:textSize="20sp" />
+        <!--密码找回-->
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/forget_password_text"
+            android:textColor="#4B60FF"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--注册按钮对应着registerOnclick点击事件-->
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#107BF8</color>
+    <color name="colorPrimaryDark">#107BF8</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorMenu">#F4F5F6</color>
+    <color name="colorLoginView">#FFFFFF</color>
+    <color name="colorMineBackground">#FAFAFA</color>
+    <color name="colorFunctionMenu">#FFFFFF</color>
+    <color name="colorRegisterBackground">#FFFFFF</color>
+    <color name="colorRoperationStep">#F5F5F5</color>
+    <color name="colorInputUserNamePage">#A5A5A5</color>
+    <color name="colorFontBlack">#000000</color>
+    <color name="colorFontWhite">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="chooseIconColor">#F0FFFF</color>
+    <color name="colorGray">#B0C4DE</color>
+    <color name="colorHalfGray">#E2CFCFCF</color>
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="rightAnswer">#1EACF9</color>
+    <color name="wrongAnswer">#FB6666</color>
+    <color name="lightGray">#B3B3B3</color>
+    <color name="darkGray">#FF6F6F71</color>
+    <color name="blue">#36C2FE</color>
+</resources>
+    <!--colorPrimary——顶部标题栏颜色
+        colorMenu——底部导航背景颜色
+        colorLoginView——登录区域背景颜色
+        colorMineBackground——我的界面背景颜色
+        colorFunctionMenu——我的常用区域背景颜色
+        -->

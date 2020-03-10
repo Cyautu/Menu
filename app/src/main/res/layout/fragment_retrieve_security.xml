@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--找回密码步骤导航-->
+    <LinearLayout
+        android:id="@+id/operation_step"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorRoperationStep"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/checkingUserPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/inputUserIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_step_later"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/inputUserNamePage"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/input_userName_page"
+                android:textColor="@color/colorInputUserNamePage"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_first"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="2"
+            android:background="@drawable/background_step_later" />
+
+        <LinearLayout
+            android:id="@+id/checkingSecurityPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/inputSecurityIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_step_before"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/inputSecurityPage"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/input_securityQuestion_page"
+                android:textColor="@color/colorInputUserNamePage"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_second"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="2"
+            android:background="@drawable/background_gradient_view" />
+
+        <LinearLayout
+            android:id="@+id/checkingPasswordPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1.2"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/inputPasswordIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_step_later"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/inputPasswordPage"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/input_changePassword_page"
+                android:textColor="@color/colorInputUserNamePage"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--密保验证-->
+    <LinearLayout
+        android:id="@+id/inputSecurityView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="120dp">
+        <!--安全问题1-->
+        <LinearLayout
+            android:id="@+id/inputQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionLabel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/safe_question1_label"
+                android:textSize="12sp"
+                android:textColor="@color/colorFontBlack"/>
+            <TextView
+                android:id="@+id/questionTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@null"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorFontBlack"/>
+
+            <EditText
+                android:id="@+id/questionAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:textSize="16sp"
+                android:hint="@string/please_input_answer_tips"/>
+        </LinearLayout>
+        <!--安全问题2        -->
+        <LinearLayout
+            android:id="@+id/inputQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionLabel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/safe_question2_label"
+                android:textSize="12sp"
+                android:textColor="@color/colorFontBlack"/>
+            <TextView
+                android:id="@+id/questionTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@null"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorFontBlack"/>
+
+            <EditText
+                android:id="@+id/questionAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:textSize="16sp"
+                android:hint="@string/please_input_answer_tips"/>
+        </LinearLayout>
+        <!--安全问题3-->
+        <LinearLayout
+            android:id="@+id/inputQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionLabel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/safe_question3_label"
+                android:textSize="12sp"
+                android:textColor="@color/colorFontBlack"/>
+            <TextView
+                android:id="@+id/questionTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@null"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorFontBlack"/>
+
+            <EditText
+                android:id="@+id/questionAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:textSize="16sp"
+                android:hint="@string/please_input_answer_tips"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/next_step_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/next_step_text"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/safe_verification_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@null"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

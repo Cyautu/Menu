@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.menu">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 每新增一个activity，需要在此处注册一个<activity标签 -->
+    <!-- 权限申请 -->
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="ManifestOrder" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+
+        <!--周培训详细-->
+        <activity android:name=".ui.mainHome.training.TrainingDetailActivity"
+            android:theme="@style/AppTheme.training"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <!--模拟考试-->
+        <activity
+            android:name=".ui.mainHome.examination.exam.MockExamActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" /> <!-- 欢迎界面 -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.skip">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 登录界面 -->
+        <activity
+            android:name=".ui.mainHome.mine.activity.LoginActivity"
+            android:label="@string/login_topTitle"
+            android:launchMode="singleInstance">
+
+            <!-- android:launchMode="singleInstance"设置该页面只能同时打开一个 -->
+        </activity> <!-- 注册界面 -->
+        <activity
+            android:name=".ui.mainHome.mine.activity.RegisterActivity"
+            android:label="@string/register_topTitle"
+            android:launchMode="singleInstance" /> <!-- 找回密码界面 -->
+        <activity
+            android:name=".ui.mainHome.mine.activity.RetrievePasswordActivity"
+            android:label="@string/retrieve_password_title"
+            android:launchMode="singleInstance" /> <!-- 个人信息 -->
+        <activity
+            android:name=".ui.mainHome.mine.activity.PersonalActivity"
+            android:label="@string/personal_information_title" /> <!-- 信息修改 -->
+        <activity
+            android:name=".ui.mainHome.mine.activity.PersonalEditActivity"
+            android:label="@string/edit_information_title" /> <!-- 搜索 -->
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/search"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.mainHome.mine.activity.MyFansActivity"
+            android:label="@string/my_fans_title"
+            android:launchMode="singleInstance" /> <!-- 我的关注 -->
+        <activity
+            android:name=".ui.mainHome.mine.activity.FollowActivity"
+            android:label="@string/my_concern_text"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- 顺序练习页面 -->
+        <activity
+            android:name=".ui.mainHome.examination.activity.SequentialPracticeActivity"
+            android:label="@string/sequential_practice_text"
+            android:launchMode="singleInstance" />
+    </application>
+
+</manifest>
